@@ -1,0 +1,13 @@
+@import '../styles/variables.scss';
+
+.root {
+  background-color: $basic-main;
+  height: 100%;
+  width: 100%;
+}
+
+.item {
+  border: 1px solid $basic-white;
+  background-color: $basic-transparent;
+  color: $basic-white;
+}

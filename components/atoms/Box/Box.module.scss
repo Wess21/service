@@ -1,0 +1,84 @@
+@import "../../../styles/variables.scss";
+
+.root {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.alignItems {
+  &_start {
+    align-items: flex-start;
+  }
+
+  &_end {
+    align-items: flex-end;
+  }
+
+  &_center {
+    align-items: center;
+  }
+}
+
+.justifyContent {
+  &_start {
+    justify-content: flex-start;
+  }
+
+  &_end {
+    justify-content: flex-end;
+  }
+
+  &_center {
+    justify-content: center;
+  }
+
+  &_spaceBetween {
+    justify-content: space-between;
+  }
+
+  &_spaceAround {
+    justify-content: space-around;
+  }
+}
+
+.flexDirection {
+  &_column {
+    flex-direction: column;
+  }
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.noOverflow {
+  overflow: hidden;
+}
+
+@each $space in $spaces {
+  .gap_#{$space} {
+    gap: #{$space}px;
+  }
+
+  .padding_#{$space} {
+    padding: #{$space}px;
+  }
+
+  .margin_#{$space} {
+    margin: #{$space}px;
+  }
+
+  @each $side in $sides {
+    .margin#{$side}_#{$space} {
+      margin-#{to-lower-case($side)}: #{$space}px;
+    }
+
+    .padding#{$side}_#{$space} {
+      padding-#{to-lower-case($side)}: #{$space}px;
+    }
+  }
+}

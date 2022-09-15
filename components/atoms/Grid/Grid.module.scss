@@ -1,0 +1,93 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+/** Не забудь поменять TGrid в файле './models/adaptive.ts' */
+$grid-cols: '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15';
+$grid-position: '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16';
+
+.root {
+  display: grid;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+@each $col in $grid-cols {
+  .columns_#{$col} {
+    grid-template-columns: repeat(#{$col}, 1fr);
+    grid-gap: 16px !important;
+  }
+}
+
+@each $col in $grid-position {
+  .colStart_#{$col} {
+    grid-column-start: #{$col};
+  }
+}
+
+@each $col in $grid-position {
+  .colEnd_#{$col} {
+    grid-column-end: #{$col};
+  }
+}
+
+@each $col in $grid-cols {
+  .rows_#{$col} {
+    grid-template-rows: repeat(#{$col}, 1fr);
+  }
+}
+
+@each $col in $grid-position {
+  .rowStart_#{$col} {
+    grid-row-start: #{$col};
+  }
+}
+
+@each $col in $grid-position {
+  .rowEnd_#{$col} {
+    grid-row-end: #{$col};
+  }
+}
+
+@each $space in $spaces {
+  .gap_#{$space} {
+    gap: #{$space}px;
+  }
+}
+
+.alignItems {
+  &_start {
+    align-items: start;
+  }
+
+  &_end {
+    align-items: end;
+  }
+
+  &_center {
+    align-items: center;
+  }
+}
+
+.justifyContent {
+  &_start {
+    justify-content: start;
+  }
+
+  &_end {
+    justify-content: end;
+  }
+
+  &_center {
+    justify-content: center;
+  }
+
+  &_spaceBetween {
+    justify-content: space-between;
+  }
+
+  &_spaceAround {
+    justify-content: space-around;
+  }
+}

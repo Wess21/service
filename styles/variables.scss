@@ -1,0 +1,113 @@
+// Базовая единица
+$base: 4px;
+
+//Максимальная ширина страницы
+$max-page-width: 1440px;
+//Максимальная ширина страницы
+$min-page-width: 1280px;
+
+/* Тип для определения отступов.
+ * При редактировании значений данного типа не забудь изменить тип TSpace в файле src/atoms/Box/models.ts
+ */
+$spaces: '2', '4', '8', '12', '16', '20', '24', '28', '32', '40', '48', '56', '64', '72', '80';
+$sides: 'Top' 'Right' 'Bottom' 'Left';
+
+// Colors
+$basic-main: #00385b;
+$basic-black: #181a1a;
+$basic-white: #ffffff;
+$basic-grey: #d0cfcf;
+$basic-grey-dark: #585858;
+$basic-grey-light: #f5f5f5;
+$basic-grey-semi-light: #e8e8e8;
+$basic-grey-semi-dark: #757575;
+$basic-transparent: transparent;
+
+$basic-overlay: rgba(0, 0, 0, 0.5);
+
+/** ----------Views--------- */
+/** grey - default  */
+$basic-grey-input: rgb(232, 232, 232);
+$basic-grey-input-color: $basic-black;
+$basic-grey-input-placeholder: $basic-grey-semi-dark;
+
+/** greyDark - default  */
+$basic-greyDark-input: $basic-grey-dark;
+$basic-greyDark-input-color: $basic-white;
+$basic-greyDark-input-placeholder: $basic-grey;
+/** ----------Views--------- */
+
+$secondary-yellow: #effd37;
+$secondary-green: #a8ff38;
+$secondary-red: #ff5c52;
+
+$color-label-briefing: #d5e1ff;
+$color-label-need-information: #d0f9ff;
+$color-label-in-progress: #beffe8;
+$color-label-done: #e6ffb1;
+$color-label-rejected: #ffd9d9;
+$color-label-profile: #2bbae8;
+$color-label-connection: #7a75fc;
+$color-label-payment: #f77aa9;
+$color-label-open-cabinet: #0abfa2;
+
+//Borders
+$border-width-base: 1px;
+
+$border-radius-base-8: $base * 2;
+$border-radius-base-12: $base * 3;
+$border-radius-base-16: $base * 4;
+$border-radius-base-48: $base * 12;
+
+$border-none: $border-width-base solid $basic-transparent;
+$border-focus: $border-width-base solid $basic-grey;
+$border-white: $border-width-base solid $basic-white;
+
+/** Transition durations. */
+$transition-duration-fast: 0.1s;
+$transition-duration: 0.25s;
+$transition-duration-slow: 0.5s;
+
+//----------------Sizes--------------
+/** --- SM --- */
+$icon-size-sm: $base * 4;
+/** --- MD --- */
+$icon-size-md-light: $base * 5;
+$icon-size-md: $base * 6;
+$border-radius-input-md: $base * 4;
+$height-input-md: $base * 8;
+$font-size-md: $base * 3;
+$padding-input-md: $base * 2 $base * 5;
+
+/** --- LG --- */
+$icon-size-lg: $base * 8;
+$font-size-lg: $base * 4;
+$height-input-lg: $base * 12;
+$border-radius-input-lg: $base * 8;
+$padding-input-lg: $base * 4 $base * 5;
+//----------------Sizes--------------
+
+//Z-index
+$z-index-menu: 100;
+$z-index-tooltip: 9999;
+$z-index-dialog: 9998;
+$z-index-notification: 10000;
+
+//Shadows
+$shadow-standart: 0 2px 4px $basic-grey-dark;
+
+//New shadow style
+$shadow-small: 0px 2px 4px rgba(0, 0, 0, 0.06);
+$shadow-medium: 0px 4px 8px rgba(0, 0, 0, 0.09);
+$shadow-large: 0px 6px 12px rgba(0, 0, 0, 0.12);
+$shadow-extra-large: 0px 8px 16px rgba(0, 0, 0, 0.16);
+
+// Breakpoints
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;
