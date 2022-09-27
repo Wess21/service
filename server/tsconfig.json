@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "CommonJS",
+    "allowJs": true,
+    "declaration": true,
+    "declarationDir": "types",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    /* Specify the root directory of input files. */
+    "rootDir": "./src",
+    /* Do not emit comments to output. */
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noImplicitAny": false
+  },
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "src/__tests__",
+    "**/*.test.tsx",
+    "**/*.test.ts",
+    "dist"
+  ]
+}
