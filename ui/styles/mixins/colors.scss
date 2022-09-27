@@ -1,0 +1,80 @@
+@import '../variables.scss';
+
+/** Преффиксы для определения классов цвета */
+@mixin colorClasses($property) {
+  &_basicMain {
+    #{$property}: $basic-main;
+  }
+
+  &_basicBlack {
+    #{$property}: $basic-black;
+  }
+
+  &_basicWhite {
+    #{$property}: $basic-white;
+  }
+
+  &_basicGrey {
+    #{$property}: $basic-grey;
+  }
+
+  &_basicGreySemiDark {
+    #{$property}: $basic-grey-semi-dark;
+  }
+
+  &_basicGreySemiLight {
+    #{$property}: $basic-grey-semi-light;
+  }
+
+  &_basicTransparent {
+    #{$property}: $basic-transparent;
+  }
+
+  &_secondaryYellow {
+    #{$property}: $secondary-yellow;
+  }
+
+  &_secondaryGreen {
+    #{$property}: $secondary-green;
+  }
+
+  &_secondaryRed {
+    #{$property}: $secondary-red;
+  }
+
+  &_labelBriefing {
+    #{$property}: $color-label-briefing;
+  }
+
+  &_labelNeedInformation {
+    #{$property}: $color-label-need-information;
+  }
+
+  &_labelInProgress {
+    #{$property}: $color-label-in-progress;
+  }
+
+  &_labelDone {
+    #{$property}: $color-label-done;
+  }
+
+  &_labelRejected {
+    #{$property}: $color-label-rejected;
+  }
+
+  &_labelProfile {
+    #{$property}: $color-label-profile;
+  }
+
+  &_labelConnection {
+    #{$property}: $color-label-connection;
+  }
+
+  &_labelPayment {
+    #{$property}: $color-label-payment;
+  }
+
+  &_labelOpenCabinet {
+    #{$property}: $color-label-open-cabinet;
+  }
+}

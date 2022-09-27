@@ -1,6 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { Box } from '../components/atoms';
+import { MainCard } from '../components/molecules';
+
 import { MAIN_MENU } from '../consts';
 import styles from './Index.module.scss';
 
@@ -14,13 +16,9 @@ const Index: NextPage = () => {
       </Head>
 
       <Box alignItems="center" justifyContent="center" gap={16} className={styles.root}>
-        {MAIN_MENU.map((m) => {
-          return (
-            <Box className={styles.item} key={m.href} padding={48}>
-              {m.title}
-            </Box>
-          );
-        })}
+        {MAIN_MENU.map((m) => (
+          <MainCard key={m.href} {...m} />
+        ))}
       </Box>
     </>
   );

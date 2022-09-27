@@ -1,7 +1,8 @@
-import type { GetServerSideProps, NextPage } from "next";
+import type { GetServerSideProps, NextPage } from 'next';
+import { MainLayout } from '../../layout';
 
 const Services: NextPage<{}> = (props) => {
-  return <>Список сервисов</>;
+  return <MainLayout>Сервис Example</MainLayout>;
 };
 
 export const getServerSideProps: GetServerSideProps = async (context) => {

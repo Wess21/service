@@ -6,6 +6,7 @@ import {
   IPaddingProps,
   TSpaceAdaptive,
   IDefaultComponentProps,
+  TColor,
 } from '../../../models';
 import styled from './Box.module.scss';
 import { classnames, getClasses } from '../../../utils';
@@ -28,6 +29,8 @@ export interface IBoxProps
 
   /** Расстояние между дочерними элементами */
   gap?: TSpaceAdaptive;
+
+  bgColor?: TColor;
 }
 
 /** Div контейнер для использования в flex верстке */
@@ -51,6 +54,7 @@ export const Box = forwardRef<HTMLDivElement, IBoxProps>(
       paddingRight = '',
       paddingTop = '',
       gap = '',
+      bgColor = '',
       wrap,
       fullWidth,
       noOverflow,
@@ -76,6 +80,7 @@ export const Box = forwardRef<HTMLDivElement, IBoxProps>(
         paddingLeft,
         paddingRight,
         gap,
+        bgColor,
       }),
       {
         [styled.flexDirection_column]: column,

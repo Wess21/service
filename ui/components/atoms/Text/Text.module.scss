@@ -1,0 +1,217 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+@import './mixins.scss';
+
+.root {
+  margin: 0;
+  padding: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/** Важно чтобы он находился выше остальных классов */
+.weight {
+  &_bold {
+    @include bold();
+  }
+
+  &_extraBold {
+    @include extraBold();
+  }
+
+  &_regular {
+    @include regular();
+  }
+
+  &_semiBold {
+    @include semiBold();
+  }
+}
+
+.size {
+  &_h1 {
+    @include size_h1();
+  }
+
+  &_h2 {
+    @include size_h2();
+  }
+
+  &_h3 {
+    @include size_h3();
+  }
+
+  &_h4 {
+    @include size_h4();
+  }
+
+  &_h5 {
+    @include size_h5();
+  }
+
+  &_primary {
+    @include size_primary();
+  }
+
+  &_secondary {
+    @include size_secondary();
+  }
+
+  &_caption {
+    @include size_caption();
+  }
+
+  &_wysiwyg {
+    & h1 {
+      @include size_h1();
+    }
+
+    & h2 {
+      @include size_h2();
+    }
+
+    & h3 {
+      @include size_h3();
+    }
+
+    & h4 {
+      @include size_h4();
+    }
+
+    & h5 {
+      @include size_h5();
+    }
+
+    & p,
+    & ul li,
+    & ol li {
+      @include size_primary();
+    }
+  }
+}
+
+.mobileSize {
+  &_h1 {
+    @include mobile_size_h1();
+  }
+
+  &_h2 {
+    @include mobile_size_h2();
+  }
+
+  &_h3 {
+    @include mobile_size_h3();
+  }
+
+  &_h4 {
+    @include mobile_size_h4();
+  }
+
+  &_h5 {
+    @include mobile_size_h5();
+  }
+
+  &_primary {
+    @include mobile_size_primary();
+  }
+
+  &_secondary {
+    @include mobile_size_secondary();
+  }
+
+  &_caption {
+    @include mobile_size_caption();
+  }
+
+  &_wysiwyg {
+    & h1 {
+      @include mobile_size_h1();
+    }
+
+    & h2 {
+      @include mobile_size_h2();
+    }
+
+    & h3 {
+      @include mobile_size_h3();
+    }
+
+    & h4 {
+      @include mobile_size_h4();
+    }
+
+    & h5 {
+      @include mobile_size_h5();
+    }
+
+    & p,
+    & ul li,
+    & ol li {
+      @include mobile_size_primary();
+    }
+  }
+}
+
+.color {
+  @include colorClasses(color);
+}
+
+.textDecoration {
+  &_lineThrough {
+    text-decoration: line-through;
+  }
+
+  &_overline {
+    text-decoration: overline;
+  }
+
+  &_underline {
+    text-decoration: underline;
+  }
+}
+
+.align {
+  &_left {
+    text-align: left;
+  }
+
+  &_center {
+    text-align: center;
+  }
+
+  &_right {
+    text-align: right;
+  }
+}
+
+.marginBotton {
+  &_primary {
+    margin-bottom: $base * 2;
+  }
+
+  &_secondary {
+    margin-bottom: $base * 2;
+  }
+
+  &Mobile {
+    &_primary {
+      margin-bottom: $base;
+    }
+
+    &_secondary {
+      margin-bottom: $base;
+    }
+  }
+}

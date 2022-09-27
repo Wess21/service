@@ -1,0 +1,21 @@
+/** Базовый тип для определения цвета */
+export type TColor =
+  | 'basicMain'
+  | 'basicBlack'
+  | 'basicWhite'
+  | 'basicGrey'
+  | 'basicGreySemiDark'
+  | 'basicGreySemiLight'
+  | 'basicTransparent'
+  | 'secondaryYellow'
+  | 'secondaryGreen'
+  | 'secondaryRed'
+  | 'labelBriefing'
+  | 'labelNeedInformation'
+  | 'labelInProgress'
+  | 'labelDone'
+  | 'labelRejected'
+  | 'labelProfile'
+  | 'labelConnection'
+  | 'labelPayment'
+  | 'labelOpenCabinet';

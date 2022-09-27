@@ -1,0 +1,106 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+@mixin regular() {
+  font-weight: 400;
+}
+
+@mixin semiBold() {
+  font-weight: 600;
+}
+
+@mixin bold() {
+  font-weight: 700;
+}
+
+@mixin extraBold() {
+  font-weight: 800;
+}
+
+@mixin size_h1 {
+  font-size: 46px;
+  line-height: 64px;
+  @include extraBold();
+}
+
+@mixin size_h2 {
+  font-size: 36px;
+  line-height: 48px;
+  @include extraBold();
+}
+
+@mixin size_h3 {
+  font-size: 24px;
+  line-height: 32px;
+  @include extraBold();
+}
+
+@mixin size_h4 {
+  font-size: 20px;
+  line-height: 24px;
+  @include bold();
+}
+
+@mixin size_h5 {
+  font-size: 12px;
+  @include bold();
+}
+
+@mixin size_primary {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin size_secondary {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin size_caption {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@mixin mobile_size_h1 {
+  font-size: 28px;
+  line-height: 36px;
+  @include extraBold();
+}
+
+@mixin mobile_size_h2 {
+  font-size: 24px;
+  line-height: 28px;
+  @include extraBold();
+}
+
+@mixin mobile_size_h3 {
+  font-size: 20px;
+  line-height: 24px;
+  @include extraBold();
+}
+
+@mixin mobile_size_h4 {
+  font-size: 16px;
+  line-height: 20px;
+  @include bold();
+}
+
+@mixin mobile_size_h5 {
+  font-size: 12px;
+  @include bold();
+}
+
+@mixin mobile_size_primary {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin mobile_size_secondary {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@mixin mobile_size_caption {
+  font-size: 10px;
+  line-height: 12px;
+}

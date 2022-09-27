@@ -1,4 +1,5 @@
-@import "../../../styles/variables.scss";
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins/index.scss';
 
 .root {
   display: flex;
@@ -81,4 +82,8 @@
       padding-#{to-lower-case($side)}: #{$space}px;
     }
   }
+}
+
+.bgColor {
+  @include colorClasses(background-color);
 }
